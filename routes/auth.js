@@ -1,0 +1,16 @@
+const router = require('express').Router();
+const controller = require('../controller/auth');
+router.post('/login', controller.login);
+router.post('/professor', controller.professor);
+router.post('/student', controller.student);
+router.post('/sugang', controller.sugang);
+router.post('/requestclass', controller.requestclass);
+router.post('/culsuk', controller.culsuk);
+router.post('/myclass', controller.myclass);
+router.post('/gogo', controller.gogo);
+router.post('/aaclass', controller.aaclass);
+router.post('/pfindclass', controller.pfindclass);
+router.post('/pstudent', controller.pstudent);
+router.post('/last', controller.last);
+router.post('/delete', controller.delete);
+module.exports = router;
